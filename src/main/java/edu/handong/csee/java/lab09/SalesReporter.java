@@ -31,8 +31,8 @@ public class SalesReporter {
 	
 	public void computeAverage() {
 		double sum=0;//declare sum local variable to save sum of sales
-		for(int i=0; i<this.numberOfAssociates; i++) {
-			
+		for(int i=0; i<this.numberOfAssociates; i++) {//loop for add sales to sum
+			sum = sum + team[i].getSales();
 		}
 	}
 	public void computehighest() {
