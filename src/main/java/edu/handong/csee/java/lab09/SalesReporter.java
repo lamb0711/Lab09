@@ -57,8 +57,10 @@ public class SalesReporter {
 				System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print over sales
 			}
 		}
-		for(int i=0; i<this.numberOfAssociates; i++) {
-			
+		for(int i=0; i<this.numberOfAssociates; i++) {//print rest of people
+			if(this.highestSales != team[i].getSales()) {
+				
+			}
 		}
 	}
 	
