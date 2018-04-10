@@ -1,8 +1,12 @@
-package edu.handong.csee.java.lab09;
-
-public class SalesAssociate {
-	public String name;
-	public double sales;
+package edu.handong.csee.java.lab09;//package name
+/**
+ * SalesAssociate class is save people data
+ * @author magic
+ *
+ */
+public class SalesAssociate {//SalesAssociate class
+	public String name;//declare string name to save people name
+	public double sales;//declare double sales to save people sales
 
 	public String getName() {
 		return name;
