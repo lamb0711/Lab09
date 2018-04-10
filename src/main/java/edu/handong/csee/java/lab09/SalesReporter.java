@@ -21,6 +21,10 @@ public class SalesReporter {
 	}
 	public static void main(String[] args) {
 		SalesReporter p = new SalesReporter();
+		p.getData();
+		p.computeAverage();
+		p.computehighest();
+		p.displayResults();
 	}
 
 }
