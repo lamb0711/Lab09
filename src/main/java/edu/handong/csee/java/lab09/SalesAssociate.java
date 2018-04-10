@@ -11,4 +11,8 @@ public class SalesAssociate {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public double getSales() {
+		return sales;
+	}
 }
