@@ -9,6 +9,10 @@ public class SalesReporter {
 	public void getData() {
 		
 	}
+	
+	public void computeAverage() {
+		
+	}
 	public static void main(String[] args) {
 
 	}
