@@ -21,12 +21,18 @@ public class SalesAssociate {//SalesAssociate class
 	public void setName(String name) {//setName method
 		this.name = name;//save input data to name
 	}
-
-	public double getSales() {
-		return sales;
+/**
+ * getSales is return the sales
+ * @return
+ */
+	public double getSales() {//getSales method
+		return sales;//return sales
 	}
-
-	public void setSales(double sales) {
-		this.sales = sales;
+/**
+ * setSales is save input data to sales
+ * @param sales
+ */
+	public void setSales(double sales) {//setSales method
+		this.sales = sales;//save input data to sales
 	}
 }
