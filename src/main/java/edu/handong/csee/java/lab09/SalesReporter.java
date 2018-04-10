@@ -14,8 +14,11 @@ public class SalesReporter {
 		
 		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
 		
-		for (int i=0; i<this.numberOfAssociates; i++) {
-			
+		for (int i=0; i<this.numberOfAssociates; i++) {//loop for input data
+			System.out.println("Enter data for associate number"+i+1);
+			System.out.print("Enter name of sales associate : ");
+			Keyboard.nextLine();
+			String name =Keyboard.nextLine();
 		}
 
 	}
