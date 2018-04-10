@@ -59,9 +59,10 @@ public class SalesReporter {
 		}
 		for(int i=0; i<this.numberOfAssociates; i++) {//print rest of people
 			if(this.highestSales != team[i].getSales()) {//if people is not highest people
-				System.out.println("Name: "+team[i].getName());
-				System.out.println("Sales: "+team[i].getSales());
-				
+				System.out.println("Name: "+team[i].getName());//print people name
+				System.out.println("Sales: "+team[i].getSales());//print people sales
+				if(team[i].getSales()>this.averageSales)//if people sales is greater than average
+					System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print sales
 			}
 		}
 	}
