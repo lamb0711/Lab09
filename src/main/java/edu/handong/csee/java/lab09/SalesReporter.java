@@ -19,6 +19,8 @@ public class SalesReporter {
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			Keyboard.nextLine();//for eat space
 			String name =Keyboard.nextLine();//save input data to String name
+			System.out.print("Enter associate's sales: ");
+			double sales = Keyboard.nextDouble();
 		}
 
 	}
