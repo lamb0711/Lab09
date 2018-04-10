@@ -15,4 +15,8 @@ public class SalesAssociate {
 	public double getSales() {
 		return sales;
 	}
+	
+	public void setSales(double sales) {
+		this.sales = sales;
+	}
 }
