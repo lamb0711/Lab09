@@ -39,6 +39,7 @@ public class SalesReporter {
 		System.out.println("Average Sales per associate is &"+sum);//print Sales average
 		this.averageSales= sum;//save average to averageSales
 	}
+	
 	public void computehighest() {
 		for(int i=0; i<this.numberOfAssociates; i++) {//loop for save highest sales
 			if(this.highestSales < team[i].getSales())//if sales is greater than highestSales
@@ -46,9 +47,11 @@ public class SalesReporter {
 		}
 		System.out.println("The highest sales figure is &"+this.highestSales);//print highest sales
 	}
+	
 	public void displayResults() {
-		
+		System.out.println("The following had the hightest sales:");
 	}
+	
 	public static void main(String[] args) {
 		SalesReporter p = new SalesReporter();
 		p.getData();
