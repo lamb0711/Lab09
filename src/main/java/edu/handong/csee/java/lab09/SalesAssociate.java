@@ -7,13 +7,19 @@ package edu.handong.csee.java.lab09;//package name
 public class SalesAssociate {//SalesAssociate class
 	public String name;//declare string name to save people name
 	public double sales;//declare double sales to save people sales
-
-	public String getName() {
-		return name;
+/**
+ * getName method is return the name
+ * @return
+ */
+	public String getName() {//getName method
+		return name;//return name string
 	}
-
-	public void setName(String name) {
-		this.name = name;
+/**
+ * setName is save input data in name
+ * @param name
+ */
+	public void setName(String name) {//setName method
+		this.name = name;//save input data to name
 	}
 
 	public double getSales() {
