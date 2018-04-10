@@ -16,6 +16,9 @@ public class SalesReporter {
 	public void computehighest() {
 		
 	}
+	public void displayResults() {
+		
+	}
 	public static void main(String[] args) {
 
 	}
