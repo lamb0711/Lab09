@@ -1,5 +1,11 @@
 package edu.handong.csee.java.lab09;
 import java.util.Scanner;
+/**
+ * SalesReporter class is save people name and sales to use keyboard. 
+ * And print highest people and average.
+ * @author magic
+ *
+ */
 public class SalesReporter {
 	private double highestSales=0;
 	private double averageSales=0;
