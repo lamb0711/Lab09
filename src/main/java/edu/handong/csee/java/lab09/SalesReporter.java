@@ -51,8 +51,10 @@ public class SalesReporter {
 	public void displayResults() {
 		System.out.println("The following had the hightest sales:");//print highest sales people data
 		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
-			if(this.highestSales == team[i].getSales()) {
-				
+			if(this.highestSales == team[i].getSales()) {//condition for print highest people
+				System.out.println("Name: "+team[i].getName());
+				System.out.println("Sales: "+team[i].getSales());
+				System.out.println(team[i].getSales()-this.averageSales+" above the average.");
 			}
 		}
 	}
