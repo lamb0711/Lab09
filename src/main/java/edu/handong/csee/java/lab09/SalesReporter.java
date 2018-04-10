@@ -57,6 +57,9 @@ public class SalesReporter {
 				System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print over sales
 			}
 		}
+		for(int i=0; i<this.numberOfAssociates; i++) {
+			
+		}
 	}
 	
 	public static void main(String[] args) {
