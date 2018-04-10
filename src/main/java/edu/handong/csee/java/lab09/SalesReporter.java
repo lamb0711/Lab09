@@ -30,6 +30,7 @@ public class SalesReporter {
 	}
 	
 	public void computeAverage() {
+		double sum=0;
 		
 	}
 	public void computehighest() {
