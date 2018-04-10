@@ -13,6 +13,9 @@ public class SalesReporter {
 	public void computeAverage() {
 		
 	}
+	public void computehighest() {
+		
+	}
 	public static void main(String[] args) {
 
 	}
