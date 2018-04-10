@@ -11,6 +11,9 @@ public class SalesReporter {
 		
 		System.out.println("Enter number of sales associates");
 		this.numberOfAssociates = Keyboard.nextInt();
+		
+		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
+
 	}
 	
 	public void computeAverage() {
