@@ -13,6 +13,10 @@ public class SalesReporter {
 		this.numberOfAssociates = Keyboard.nextInt();
 		
 		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
+		
+		for (int i=0; i<this.numberOfAssociates; i++) {
+			
+		}
 
 	}
 	
