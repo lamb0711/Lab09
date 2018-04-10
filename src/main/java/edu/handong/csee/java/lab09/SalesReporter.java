@@ -23,8 +23,8 @@ public class SalesReporter {
 			System.out.print("Enter associate's sales: ");//print message
 			double sales = Keyboard.nextDouble();//save input data to sales
 			
-			team[i].setName(name);
-			team[i].setSales(sales);
+			team[i].setName(name);//save input data to team array name
+			team[i].setSales(sales);//save input data to team array sales
 		}
 
 	}
