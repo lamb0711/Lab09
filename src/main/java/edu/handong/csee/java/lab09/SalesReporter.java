@@ -23,7 +23,7 @@ public class SalesReporter {
 			System.out.print("Enter associate's sales: ");//print message
 			double sales = Keyboard.nextDouble();//save input data to sales
 			
-			team[i].setName(name);//save input data to team array name
+			team[i].setName(name);//save input data to team array name //debug
 			team[i].setSales(sales);//save input data to team array sales
 		}
 
@@ -72,7 +72,7 @@ public class SalesReporter {
 	
 	public static void main(String[] args) {
 		SalesReporter p = new SalesReporter();
-		p.getData();
+		p.getData();//debug
 		p.computeAverage();
 		p.computehighest();
 		p.displayResults();
