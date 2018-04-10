@@ -62,7 +62,7 @@ public class SalesReporter {//class name
 	/**
 	 * displayResults is print team array
 	 */
-	public void displayResults() {
+	public void displayResults() {//displayResults method
 		System.out.println("The following had the hightest sales:");//print highest sales people data
 		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
 			if(this.highestSales == team[i].getSales()) {//condition for print highest people
@@ -83,13 +83,16 @@ public class SalesReporter {//class name
 			}
 		}
 	}
-	
-	public static void main(String[] args) {
-		SalesReporter p = new SalesReporter();
-		p.getData();//debug
-		p.computeAverage();
-		p.computehighest();
-		p.displayResults();
+	/**
+	 * main method.
+	 * @param args
+	 */
+	public static void main(String[] args) {//main method
+		SalesReporter p = new SalesReporter();//declare instance variable
+		p.getData();//debug //call getData method
+		p.computeAverage();//call computeAverage method
+		p.computehighest();//call computehighest method
+		p.displayResults();//call displayResults method
 	}
 
 }
