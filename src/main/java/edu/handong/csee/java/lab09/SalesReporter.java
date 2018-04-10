@@ -49,7 +49,10 @@ public class SalesReporter {
 	}
 	
 	public void displayResults() {
-		System.out.println("The following had the hightest sales:");
+		System.out.println("The following had the hightest sales:");//print highest sales people data
+		for(int i=0; i<this.numberOfAssociates; i++) {
+			
+		}
 	}
 	
 	public static void main(String[] args) {
