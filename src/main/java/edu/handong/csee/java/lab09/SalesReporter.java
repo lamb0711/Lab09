@@ -50,8 +50,10 @@ public class SalesReporter {
 	
 	public void displayResults() {
 		System.out.println("The following had the hightest sales:");//print highest sales people data
-		for(int i=0; i<this.numberOfAssociates; i++) {
-			
+		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
+			if(this.highestSales == team[i].getSales()) {
+				
+			}
 		}
 	}
 	
