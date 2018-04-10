@@ -11,9 +11,11 @@ public class SalesReporter {//class name
 	private double averageSales=0;//save average of sales
 	private SalesAssociate[] team;//this array save people data. type is salesAssociate 
 	private int numberOfAssociates;//number of people
-	
-	public void getData() {
-		Scanner Keyboard = new Scanner(System.in);
+	/**
+	 * getData method is save input data to team array.
+	 */
+	public void getData() {//getData method
+		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
 		
 		System.out.println("Enter number of sales associates");
 		this.numberOfAssociates = Keyboard.nextInt();
