@@ -16,6 +16,8 @@ public class SalesReporter {//class name
 	 */
 	public void getData() {//getData method
 		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
+		String name;
+		double sales;
 		
 		System.out.println("Enter number of sales associates");//print message for input number of people
 		this.numberOfAssociates = Keyboard.nextInt();//save number of people
@@ -26,10 +28,10 @@ public class SalesReporter {//class name
 			System.out.println("Enter data for associate number"+i+1);//it show number of people
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			Keyboard.nextLine();//for eat space
-			String name =Keyboard.nextLine();//save input data to String name
+			name =Keyboard.nextLine();//save input data to String name
 			
 			System.out.print("Enter associate's sales: ");//print message
-			double sales = Keyboard.nextDouble();//save input data to sales
+			sales = Keyboard.nextDouble();//save input data to sales
 			
 			team[i].setName(name);//save input data to team array name //debug
 			team[i].setSales(sales);//save input data to team array sales
