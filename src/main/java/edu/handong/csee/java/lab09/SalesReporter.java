@@ -41,7 +41,8 @@ public class SalesReporter {
 	}
 	public void computehighest() {
 		for(int i=0; i<this.numberOfAssociates; i++) {//loop for save highest sales
-			
+			if(this.highestSales < team[i].getSales())
+				this.highestSales = team[i].getSales();
 		}
 		
 	}
