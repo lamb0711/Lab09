@@ -7,7 +7,7 @@ public class SalesReporter {
 	private int numberOfAssociates;
 	
 	public void getData() {
-		
+		Scanner Keyboard = new Scanner(System.in);
 	}
 	
 	public void computeAverage() {
