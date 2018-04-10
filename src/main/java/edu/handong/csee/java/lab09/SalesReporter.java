@@ -44,7 +44,7 @@ public class SalesReporter {
 			if(this.highestSales < team[i].getSales())//if sales is greater than highestSales
 				this.highestSales = team[i].getSales();//save highest sales to highestSales
 		}
-		
+		System.out.println("The highest sales figure is &"+this.highestSales);
 	}
 	public void displayResults() {
 		
