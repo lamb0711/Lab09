@@ -1,16 +1,16 @@
-package edu.handong.csee.java.lab09;
-import java.util.Scanner;
+package edu.handong.csee.java.lab09;//package name
+import java.util.Scanner;//use scanner class
 /**
  * SalesReporter class is save people name and sales to use keyboard. 
  * And print highest people and average.
  * @author magic
  *
  */
-public class SalesReporter {
-	private double highestSales=0;
-	private double averageSales=0;
-	private SalesAssociate[] team;
-	private int numberOfAssociates;
+public class SalesReporter {//class name
+	private double highestSales=0;//save highest of sales
+	private double averageSales=0;//save average of sales
+	private SalesAssociate[] team;//this array save people data. type is salesAssociate 
+	private int numberOfAssociates;//number of people
 	
 	public void getData() {
 		Scanner Keyboard = new Scanner(System.in);
