@@ -37,10 +37,10 @@ public class SalesReporter {
 		sum = sum/numberOfAssociates;//sum is divided number of array
 		
 		System.out.println("Average Sales per associate is &"+sum);//print Sales average
-		this.averageSales= sum;
+		this.averageSales= sum;//save average to averageSales
 	}
 	public void computehighest() {
-		for(int i=0; i<this.numberOfAssociates; i++) {
+		for(int i=0; i<this.numberOfAssociates; i++) {//loop for save highest sales
 			
 		}
 		
