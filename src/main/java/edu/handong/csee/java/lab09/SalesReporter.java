@@ -8,6 +8,9 @@ public class SalesReporter {
 	
 	public void getData() {
 		Scanner Keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter number of sales associates");
+		this.numberOfAssociates = Keyboard.nextInt();
 	}
 	
 	public void computeAverage() {
