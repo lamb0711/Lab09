@@ -52,14 +52,16 @@ public class SalesReporter {//class name
 	/**
 	 * computehighest method is save highest sales
 	 */
-	public void computehighest() {
+	public void computehighest() {//computehighest method
 		for(int i=0; i<this.numberOfAssociates; i++) {//loop for save highest sales
 			if(this.highestSales < team[i].getSales())//if sales is greater than highestSales
 				this.highestSales = team[i].getSales();//save highest sales to highestSales
 		}
 		System.out.println("The highest sales figure is &"+this.highestSales);//print highest sales
 	}
-	
+	/**
+	 * displayResults is print team array
+	 */
 	public void displayResults() {
 		System.out.println("The following had the hightest sales:");//print highest sales people data
 		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
