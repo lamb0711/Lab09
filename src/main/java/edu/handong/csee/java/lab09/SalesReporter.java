@@ -63,6 +63,9 @@ public class SalesReporter {
 				System.out.println("Sales: "+team[i].getSales());//print people sales
 				if(team[i].getSales()>this.averageSales)//if people sales is greater than average
 					System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print sales
+				else//if people sales is smaller than average
+					System.out.println(this.averageSales-team[i].getSales()+" below the average.");//print sales
+				
 			}
 		}
 	}
