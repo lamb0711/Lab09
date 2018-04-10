@@ -17,8 +17,8 @@ public class SalesReporter {//class name
 	public void getData() {//getData method
 		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
 		
-		System.out.println("Enter number of sales associates");
-		this.numberOfAssociates = Keyboard.nextInt();
+		System.out.println("Enter number of sales associates");//print message for input number of people
+		this.numberOfAssociates = Keyboard.nextInt();//save number of people
 		
 		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
 		
