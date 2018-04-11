@@ -16,26 +16,26 @@ public class SalesReporter {//class name
 	 */
 	public void getData() {//getData method
 		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
-		String name;
-		double sales;
-		
+		String name;//save name
+		double sales;//save sales
+
 		System.out.println("Enter number of sales associates");//print message for input number of people
 		this.numberOfAssociates = Keyboard.nextInt();//save number of people
-		
+
 		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
-		
-		
+
+
 		for (int i=0; i<this.numberOfAssociates; i++) {//loop for input data
 			System.out.println("Enter data for associate number"+(i+1));//it show number of people
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			Keyboard.nextLine();//for eat space
 			name =Keyboard.nextLine();//save input data to String name
-			
+
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
-			
-			team[i] = new SalesAssociate();
-			
+
+			team[i] = new SalesAssociate();//allocate memory to team array
+
 			team[i].setName(name);//save input data to team array name //debug
 			team[i].setSales(sales);//save input data to team array sales
 		}
@@ -50,8 +50,8 @@ public class SalesReporter {//class name
 			sum = sum + team[i].getSales();//add sales to sum
 		}
 		sum = sum/numberOfAssociates;//sum is divided number of array
-		
-		System.out.println("Average Sales per associate is &"+sum);//print Sales average
+
+		System.out.println("\nAverage Sales per associate is $"+sum);//print Sales average
 		this.averageSales= sum;//save average to averageSales
 	}
 	/**
@@ -62,7 +62,7 @@ public class SalesReporter {//class name
 			if(this.highestSales < team[i].getSales())//if sales is greater than highestSales
 				this.highestSales = team[i].getSales();//save highest sales to highestSales
 		}
-		System.out.println("The highest sales figure is &"+this.highestSales);//print highest sales
+		System.out.println("The highest sales figure is $"+this.highestSales);//print highest sales
 	}
 	/**
 	 * displayResults is print team array
@@ -72,19 +72,20 @@ public class SalesReporter {//class name
 		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
 			if(this.highestSales == team[i].getSales()) {//condition for print highest people
 				System.out.println("Name: "+team[i].getName());//print highest people name
-				System.out.println("Sales: "+team[i].getSales());//print highest people sales
+				System.out.println("Sales: $"+team[i].getSales());//print highest people sales
 				System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print over sales
 			}
 		}
+		System.out.println("\nThe rest performed as follows: ");//print message
 		for(int i=0; i<this.numberOfAssociates; i++) {//print rest of people
 			if(this.highestSales != team[i].getSales()) {//if people is not highest people
 				System.out.println("Name: "+team[i].getName());//print people name
-				System.out.println("Sales: "+team[i].getSales());//print people sales
+				System.out.println("Sales: $"+team[i].getSales());//print people sales
 				if(team[i].getSales()>this.averageSales)//if people sales is greater than average
 					System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print sales
 				else//if people sales is smaller than average
 					System.out.println(this.averageSales-team[i].getSales()+" below the average.");//print sales
-				
+
 			}
 		}
 	}
