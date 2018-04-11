@@ -24,14 +24,17 @@ public class SalesReporter {//class name
 		
 		team = new SalesAssociate[this.numberOfAssociates];//allocate team array to use SalesAssociate
 		
+		
 		for (int i=0; i<this.numberOfAssociates; i++) {//loop for input data
-			System.out.println("Enter data for associate number"+i+1);//it show number of people
+			System.out.println("Enter data for associate number"+(i+1));//it show number of people
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			Keyboard.nextLine();//for eat space
 			name =Keyboard.nextLine();//save input data to String name
 			
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
+			
+			team[i] = new SalesAssociate();
 			
 			team[i].setName(name);//save input data to team array name //debug
 			team[i].setSales(sales);//save input data to team array sales
