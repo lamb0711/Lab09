@@ -47,10 +47,9 @@ public class SalesReporter {//class name
 	 * computeAverage is method that compute average of sales and print it
 	 */
 	public void computeAverage() {//computeAverage method
-		//double sum=0;//declare sum local variable to save sum of sales
-		double total=0;
-		for(Double sum : team2) {//loop for add sales to sum
-			total = total + sum;//add sales to sum
+		double total=0;//it save sum of sales
+		for(double sum : team2) {//sum save team2 data
+			total = total + sum;//add sum to total
 	
 		}
 		total = total/numberOfAssociates;//sum is divided number of array
