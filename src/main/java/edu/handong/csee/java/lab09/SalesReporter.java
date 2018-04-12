@@ -24,8 +24,8 @@ public class SalesReporter {//class name
 		System.out.println("Enter number of sales associates");//print message for input number of people
 		this.numberOfAssociates = Keyboard.nextInt();//save number of people
 
-		team = new ArrayList<String>();//allocate team array to use SalesAssociate
-		team2 = new ArrayList<Double>();
+		team = new ArrayList<String>();//allocate team array list to save people name
+		team2 = new ArrayList<Double>();//allocate team array list to save people sales
 
 		for (int i=0; i<this.numberOfAssociates; i++) {//loop for input data
 			System.out.println("Enter data for associate number"+(i+1));//it show number of people
