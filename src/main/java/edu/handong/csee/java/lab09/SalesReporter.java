@@ -50,9 +50,9 @@ public class SalesReporter {//class name
 		double total=0;//it save sum of sales
 		for(double sum : team2) {//sum save team2 data
 			total = total + sum;//add sum to total
-	
 		}
-		total = total/numberOfAssociates;//sum is divided number of array
+		
+		total = total/numberOfAssociates;//total is divided number of array list
 
 		System.out.println("\nAverage Sales per associate is $"+total);//print Sales average
 		this.averageSales= total;//save average to averageSales
