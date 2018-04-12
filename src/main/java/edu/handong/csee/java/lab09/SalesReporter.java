@@ -25,24 +25,26 @@ public class SalesReporter {//class name
 
 		//System.out.println("Enter number of sales associates");//print message for input number of people
 		//this.numberOfAssociates = Keyboard.nextInt();//save number of people
-int i=0;
+        int i=0;
 		team = new ArrayList<String>();//allocate team array list to save people name
-		team2 = new ArrayList<Double>();//allocate team array list to save people sales		while(!done) {//loop for input data
-		while(!done) {	
-		System.out.println("Enter data for associate number"+(i+1));//it show number of people
-			i++;
+		team2 = new ArrayList<Double>();//allocate team array list to save people sales		
+		
+		while(!done) {	//loop for input data
+		    System.out.println("Enter data for associate number"+(i+1));//it show number of people
 			System.out.print("Enter name of sales associate : ");//print message for input name
-			Keyboard.nextLine();//for eat space
+			i++;
+			
 			name =Keyboard.nextLine();//save input data to String name
 
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
 
-			//team[i] = new SalesAssociate();//allocate memory to team array //remove allocate class
 
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
 			
+			
+			Keyboard.nextLine();
 			System.out.println("More people? ");
 			String answer = Keyboard.nextLine();
 			
