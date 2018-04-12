@@ -63,8 +63,8 @@ public class SalesReporter {//class name
 	 */
 	public void computehighest() {//computehighest method
 		for(int i=0; i<this.numberOfAssociates; i++) {//loop for save highest sales
-			if(this.highestSales < team[i].getSales())//if sales is greater than highestSales
-				this.highestSales = team[i].getSales();//save highest sales to highestSales
+			if(this.highestSales < team2.get(i))//if sales is greater than highestSales
+				this.highestSales = team2.get(i);//save highest sales to highestSales
 		}
 		System.out.println("The highest sales figure is $"+this.highestSales);//print highest sales
 	}
@@ -74,21 +74,21 @@ public class SalesReporter {//class name
 	public void displayResults() {//displayResults method
 		System.out.println("The following had the hightest sales:");//print highest sales people data
 		for(int i=0; i<this.numberOfAssociates; i++) {//add loop for print data
-			if(this.highestSales == team[i].getSales()) {//condition for print highest people
-				System.out.println("Name: "+team[i].getName());//print highest people name
-				System.out.println("Sales: $"+team[i].getSales());//print highest people sales
-				System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print over sales
+			if(this.highestSales == team2.get(i)) {//condition for print highest people
+				System.out.println("Name: "+team.get(i));//print highest people name
+				System.out.println("Sales: $"+team2.get(i));//print highest people sales
+				System.out.println(team2.get(i)-this.averageSales+" above the average.");//print over sales
 			}
 		}
 		System.out.println("\nThe rest performed as follows: ");//print message
 		for(int i=0; i<this.numberOfAssociates; i++) {//print rest of people
-			if(this.highestSales != team[i].getSales()) {//if people is not highest people
-				System.out.println("Name: "+team[i].getName());//print people name
-				System.out.println("Sales: $"+team[i].getSales());//print people sales
-				if(team[i].getSales()>this.averageSales)//if people sales is greater than average
-					System.out.println(team[i].getSales()-this.averageSales+" above the average.");//print sales
+			if(this.highestSales != team2.get(i)) {//if people is not highest people
+				System.out.println("Name: "+team.get(i));//print people name
+				System.out.println("Sales: $"+team2.get(i));//print people sales
+				if(team2.get(i)>this.averageSales)//if people sales is greater than average
+					System.out.println(team2.get(i)-this.averageSales+" above the average.");//print sales
 				else//if people sales is smaller than average
-					System.out.println(this.averageSales-team[i].getSales()+" below the average.");//print sales
+					System.out.println(this.averageSales-team2.get(i)+" below the average.");//print sales
 
 			}
 		}
