@@ -47,14 +47,16 @@ public class SalesReporter {//class name
 	 * computeAverage is method that compute average of sales and print it
 	 */
 	public void computeAverage() {//computeAverage method
-		double sum=0;//declare sum local variable to save sum of sales
-		for(int i=0; i<this.numberOfAssociates; i++) {//loop for add sales to sum
-			sum = sum + team[i].getSales();//add sales to sum
+		//double sum=0;//declare sum local variable to save sum of sales
+		double total=0;
+		for(Double sum : team2) {//loop for add sales to sum
+			total = total + sum;//add sales to sum
+	
 		}
-		sum = sum/numberOfAssociates;//sum is divided number of array
+		total = total/numberOfAssociates;//sum is divided number of array
 
-		System.out.println("\nAverage Sales per associate is $"+sum);//print Sales average
-		this.averageSales= sum;//save average to averageSales
+		System.out.println("\nAverage Sales per associate is $"+total);//print Sales average
+		this.averageSales= total;//save average to averageSales
 	}
 	/**
 	 * computehighest method is save highest sales
