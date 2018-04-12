@@ -4,6 +4,7 @@ import java.util.Scanner;//use scanner class
 /**
  * SalesReporter class is save people name and sales to use keyboard. 
  * And print highest people and average.
+ * This class use array list.
  * @author magic
  *
  */
@@ -14,20 +15,21 @@ public class SalesReporter {//class name
 	private ArrayList<Double> team2;//this array list to save people sales
 	private int numberOfAssociates;//number of people
 	/**
-	 * getData method is save input data to team array.
+	 * getData method is save input data to team array list.
 	 */
 	public void getData() {//getData method
 		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
 		String name;//save name
 		double sales;//save sales
+		boolean done = false;
 
-		System.out.println("Enter number of sales associates");//print message for input number of people
-		this.numberOfAssociates = Keyboard.nextInt();//save number of people
+		//System.out.println("Enter number of sales associates");//print message for input number of people
+		//this.numberOfAssociates = Keyboard.nextInt();//save number of people
 
 		team = new ArrayList<String>();//allocate team array list to save people name
 		team2 = new ArrayList<Double>();//allocate team array list to save people sales
 
-		for (int i=0; i<this.numberOfAssociates; i++) {//loop for input data
+		while(!done) {//loop for input data
 			System.out.println("Enter data for associate number"+(i+1));//it show number of people
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			Keyboard.nextLine();//for eat space
@@ -40,6 +42,12 @@ public class SalesReporter {//class name
 
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
+			
+			System.out.println("More people? ");
+			String answer = Keyboard.nextLine();
+			
+			if(!answer.equalsIgnoreCase ("yes"))
+				done = true; 
 		}
 
 	}
