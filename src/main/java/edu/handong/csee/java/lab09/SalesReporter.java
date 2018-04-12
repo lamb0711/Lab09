@@ -36,10 +36,10 @@ public class SalesReporter {//class name
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
 
-			team[i] = new SalesAssociate();//allocate memory to team array
+			//team[i] = new SalesAssociate();//allocate memory to team array
 
-			team[i].setName(name);//save input data to team array name //debug
-			team[i].setSales(sales);//save input data to team array sales
+			team.add(name);//save input data to team array name //debug
+			team2.add(sales);//save input data to team array sales
 		}
 
 	}
