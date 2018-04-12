@@ -1,5 +1,5 @@
 package edu.handong.csee.java.lab09;//package name
-import java.util.ArrayList;
+import java.util.ArrayList;//use Arraylist
 import java.util.Scanner;//use scanner class
 /**
  * SalesReporter class is save people name and sales to use keyboard. 
