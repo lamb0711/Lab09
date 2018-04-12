@@ -10,8 +10,8 @@ import java.util.Scanner;//use scanner class
 public class SalesReporter {//class name
 	private double highestSales=0;//save highest of sales
 	private double averageSales=0;//save average of sales
-	private ArrayList<String> team;//this array save people data. type is salesAssociate 
-	private ArrayList<Double> team2;
+	private ArrayList<String> team;//this array list to save people name
+	private ArrayList<Double> team2;//this array list to save people sales
 	private int numberOfAssociates;//number of people
 	/**
 	 * getData method is save input data to team array.
