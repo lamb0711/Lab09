@@ -23,26 +23,24 @@ public class SalesReporter {//class name
 		double sales;//save sales
 		boolean done = false;
 
-		//System.out.println("Enter number of sales associates");//print message for input number of people
-		//this.numberOfAssociates = Keyboard.nextInt();//save number of people
         int i=0;
 		team = new ArrayList<String>();//allocate team array list to save people name
 		team2 = new ArrayList<Double>();//allocate team array list to save people sales		
 		
 		while(!done) {	//loop for input data
 		    System.out.println("Enter data for associate number"+(i+1));//it show number of people
+		    i++;
 			System.out.print("Enter name of sales associate : ");//print message for input name
-			i++;
-			
 			name =Keyboard.nextLine();//save input data to String name
-
+ 
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
 
-
+            team = new ArrayList<String>();
+            team2 = new ArrayList<Double>();
+            
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
-			
 			
 			Keyboard.nextLine();
 			System.out.println("More people? ");
@@ -57,6 +55,7 @@ public class SalesReporter {//class name
 	 * computeAverage is method that compute average of sales and print it
 	 */
 	public void computeAverage() {//computeAverage method
+		
 		double total=0;//it save sum of sales
 		for(double sum : team2) {//sum save team2 data
 			total = total + sum;//add sum to total
