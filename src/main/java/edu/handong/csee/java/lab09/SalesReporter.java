@@ -36,9 +36,6 @@ public class SalesReporter {//class name
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
 
-            team = new ArrayList<String>();
-            team2 = new ArrayList<Double>();
-            
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
 			
