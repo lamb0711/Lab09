@@ -23,44 +23,44 @@ public class SalesReporter {//class name
 		double sales;//save sales
 		boolean done = false;//save loop answer variable
 
-        int i=0;//save loop number
+		int i=0;//save loop number
 		team = new ArrayList<String>();//allocate team array list to save people name
 		team2 = new ArrayList<Double>();//allocate team array list to save people sales		
-		
+
 		while(!done) {	//loop for input data
-		    System.out.println("Enter data for associate number"+(i+1));//it show number of people
-		    i++;//add loop number
+			System.out.println("Enter data for associate number"+(i+1));//it show number of people
+			i++;//add loop number
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			name =Keyboard.nextLine();//save input data to String name
- 
+
 			System.out.print("Enter associate's sales: ");//print message
 			sales = Keyboard.nextDouble();//save input data to sales
-		
+
 
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
-			
+
 			Keyboard.nextLine();//input space
 			System.out.println("More people? ");//ask input people or not
 			String answer = Keyboard.nextLine();//save input data to answer
-			
+
 			if(!answer.equalsIgnoreCase ("yes"))//if input data is not 'yes'
 				done = true; //save true to done. it help loop to finish
 		}
 		numberOfAssociates=i;//save loop number to numberOfAssociates
 
 	}
-	
+
 	/**
 	 * computeAverage is method that compute average of sales and print it
 	 */
 	public void computeAverage() {//computeAverage method
-		
+
 		double total=0;//it save sum of sales
 		for(double sum : team2) {//sum save team2 data
 			total = total + sum;//add sum to total
 		}
-		
+
 		total = total/numberOfAssociates;//total is divided number of array list
 
 		System.out.println("\nAverage Sales per associate is $"+total);//print Sales average
