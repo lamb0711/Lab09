@@ -37,8 +37,8 @@ public class SalesReporter {//class name
 			sales = Keyboard.nextDouble();//save input data to sales
 		
 
-			team.add(i,name);//save input data to team string array list
-			team2.add(i,sales);//save input data to team double array list
+			team.add(name);//save input data to team string array list
+			team2.add(sales);//save input data to team double array list
 			
 			Keyboard.nextLine();
 			System.out.println("More people? ");
@@ -47,8 +47,10 @@ public class SalesReporter {//class name
 			if(!answer.equalsIgnoreCase ("yes"))
 				done = true; 
 		}
+		numberOfAssociates=i;
 
 	}
+	
 	/**
 	 * computeAverage is method that compute average of sales and print it
 	 */
