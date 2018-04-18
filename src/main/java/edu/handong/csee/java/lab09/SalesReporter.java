@@ -21,9 +21,9 @@ public class SalesReporter {//class name
 		Scanner Keyboard = new Scanner(System.in);//declare keyboard to use scanner 
 		String name;//save name
 		double sales;//save sales
-		boolean done = false;
+		boolean done = false;//save loop answer variable
 
-        int i=0;
+        int i=0;//save loop number
 		team = new ArrayList<String>();//allocate team array list to save people name
 		team2 = new ArrayList<Double>();//allocate team array list to save people sales		
 		
