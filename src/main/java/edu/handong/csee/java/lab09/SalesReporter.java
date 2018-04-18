@@ -44,10 +44,10 @@ public class SalesReporter {//class name
 			System.out.println("More people? ");//ask input people or not
 			String answer = Keyboard.nextLine();//save input data to answer
 			
-			if(!answer.equalsIgnoreCase ("yes"))
-				done = true; 
+			if(!answer.equalsIgnoreCase ("yes"))//if input data is not 'yes'
+				done = true; //save true to done. it help loop to finish
 		}
-		numberOfAssociates=i;
+		numberOfAssociates=i;//save loop number to numberOfAssociates
 
 	}
 	
