@@ -29,7 +29,7 @@ public class SalesReporter {//class name
 		
 		while(!done) {	//loop for input data
 		    System.out.println("Enter data for associate number"+(i+1));//it show number of people
-		    i++;
+		    i++;//add loop number
 			System.out.print("Enter name of sales associate : ");//print message for input name
 			name =Keyboard.nextLine();//save input data to String name
  
@@ -40,9 +40,9 @@ public class SalesReporter {//class name
 			team.add(name);//save input data to team string array list
 			team2.add(sales);//save input data to team double array list
 			
-			Keyboard.nextLine();
-			System.out.println("More people? ");
-			String answer = Keyboard.nextLine();
+			Keyboard.nextLine();//input space
+			System.out.println("More people? ");//ask input people or not
+			String answer = Keyboard.nextLine();//save input data to answer
 			
 			if(!answer.equalsIgnoreCase ("yes"))
 				done = true; 
